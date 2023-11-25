@@ -57,6 +57,9 @@ const Main: React.FC<Props> = (props: Props) => {
           <div className="content">{questions.at(index)}</div>
           <div className="button-container">
             <button onClick={onClickNext}>Next</button>
+            <div className="current">{`현재 ${index + 1}/${
+              questions.length
+            }`}</div>
           </div>
         </div>
       )}
